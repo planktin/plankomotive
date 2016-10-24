@@ -101,9 +101,8 @@ Rails.application.configure do
     :enable_starttls_auto => true
   }
 
-    # See: http://doc.locomotivecms.com/get-started/heroku
+  # See: http://doc.locomotivecms.com/get-started/heroku
   # See: https://devcenter.heroku.com/articles/sendgrid
-  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
