@@ -136,7 +136,7 @@ test:
 production:
   clients:
     default:
-      database: plankomotive_production
+      database: <%= ENV['MONGODB_DB'] %>
       uri: <%= ENV['MONGODB_URI'] %>
       options:
         max_pool_size: 1
