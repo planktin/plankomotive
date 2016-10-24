@@ -36,6 +36,10 @@ end
 group :production do
   # Use thin as app server on Heroku
   gem 'thin'
+
+  # https://devcenter.heroku.com/articles/rails4
+  gem 'rails_12factor'
+
   # http://www.amberbit.com/blog/building-small-sites-with-locomotive-cms-and-deploying-to-heroku-and-gridfs
   # gem 'bson_ext', '~> 1.9.2'
   # gem 'rack-gridfs', '~> 0.4.1'
