@@ -1,19 +1,21 @@
 source 'https://rubygems.org'
 
-ruby '2.2.4'
+# ruby '2.2.4'
+ruby '2.5.1'
 
 # Rails
+gem 'coffee-rails',  '~> 4.1.0'
 gem 'rails',         '~> 4.2.5'
 gem 'sass-rails',    '~> 5.0'
 gem 'uglifier',      '>= 1.3.0'
-gem 'coffee-rails',  '~> 4.1.0'
 # gem 'compass-rails', '~> 2.0.2'
 
 # Locomotive, AWS, Heroku
 # gem 'locomotive_cms', '~> 2.5', git: 'https://github.com/planktin/engine.git', branch: 'woff2'
-gem 'locomotivecms', '~> 3.1.1'
+# gem 'locomotivecms', '~> 3.1.1'
 gem 'carrierwave-aws'
-gem 'platform-api',  '~> 0.3.0'
+gem 'locomotivecms', '~> 3.4.0'
+gem 'platform-api', '~> 0.3.0'
 
 # Use Puma as the app server
 gem 'puma'

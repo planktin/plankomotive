@@ -1,0 +1,52 @@
+AllCops:
+  Exclude:
+    - config/cloudinary.yml
+    - config/database.yml
+    - config/secrets.yml
+    - config/initializers/**
+    - db/migrate/**
+    - db/schema.rb
+    - db/seeds.rb
+    - lib/tasks/**
+    - node_modules/**
+  Rails:
+    Enabled: true
+
+Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 80
+
+Metrics/BlockLength:
+  Max: 40
+
+Metrics/ClassLength:
+  Max: 400
+
+Metrics/CyclomaticComplexity:
+  Max: 80
+
+Metrics/LineLength:
+  Max: 200
+
+Metrics/MethodLength:
+  Max: 40
+
+Metrics/ModuleLength:
+  Max: 400
+
+Metrics/PerceivedComplexity:
+  Max: 80
+
+Style/AsciiIdentifiers:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
