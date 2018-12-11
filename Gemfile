@@ -1,21 +1,18 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# ruby '2.2.4'
 ruby '2.5.1'
 
 # Rails
-gem 'coffee-rails',  '~> 4.1.0'
-gem 'rails',         '~> 4.2.5'
+gem 'coffee-rails',  '~> 4.2'
+gem 'rails',         '~> 5.1.1'
 gem 'sass-rails',    '~> 5.0'
 gem 'uglifier',      '>= 1.3.0'
-# gem 'compass-rails', '~> 2.0.2'
 
 # Locomotive, AWS, Heroku
-# gem 'locomotive_cms', '~> 2.5', git: 'https://github.com/planktin/engine.git', branch: 'woff2'
-# gem 'locomotivecms', '~> 3.1.1'
 gem 'carrierwave-aws'
-gem 'locomotivecms', '~> 3.4.0'
-gem 'platform-api', '~> 0.3.0'
+gem 'locomotivecms', '~> 3.4'
+gem 'platform-api', '~> 0.3'
 
 # Use Puma as the app server
 gem 'puma'
@@ -28,7 +25,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '>= 3.3.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -57,3 +54,6 @@ end
 # gem 'capistrano'
 # To use debugger
 # gem 'debugger'
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
