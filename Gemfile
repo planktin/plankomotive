@@ -12,7 +12,8 @@ gem 'uglifier',      '>= 1.3.0'
 # Locomotive, AWS, Heroku
 gem 'carrierwave-aws'
 gem 'locomotivecms', '~> 3.4'
-gem 'platform-api', '~> 0.3'
+# gem 'platform-api', '~> 0.3'
+gem 'platform-api'
 
 # Use Puma as the app server
 gem 'puma'
