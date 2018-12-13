@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-
-
   # Locomotive Back-office
   mount Locomotive::Engine => '/locomotive', as: 'locomotive' # you can change the value of the path, by default set to "/locomotive"
 
@@ -9,12 +7,9 @@ Rails.application.routes.draw do
 
   # Render site
   mount Locomotive::Steam.to_app => '/', anchor: false
-
 end
 
 # Plankomotive::Application.routes.draw do
-
-
   # # Locomotive Back-office
   # mount Locomotive::Engine => '/locomotive', as: 'locomotive' # you can change the value of the path, by default set to "/locomotive"
 

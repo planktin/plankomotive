@@ -439,8 +439,10 @@ DEPENDENCIES
   byebug
   carrierwave-aws
   coffee-rails (~> 4.2)
+  devise (~> 4.4.3)
   dotenv-rails
   locomotivecms (~> 3.4)
+  mongoid (~> 6.4.0)
   platform-api
   puma
   rails (~> 5.1.1)
