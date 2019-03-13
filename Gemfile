@@ -12,7 +12,9 @@ gem 'uglifier',      '>= 1.3.0'
 # Locomotive, AWS, Heroku
 gem 'carrierwave-aws'
 gem 'devise',        '~> 4.4.3'
-gem 'locomotivecms', '~> 3.4'
+# gem 'locomotivecms', '~> 3.4'
+# gem 'locomotivecms', '~> 3.4', path: '/Projects/engine'
+gem 'locomotivecms', git: 'https://github.com/planktin/engine.git', branch: 'v3.4.x'
 gem 'mongoid',       '~> 6.4.0'
 gem 'platform-api'
 
