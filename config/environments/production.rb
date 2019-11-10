@@ -98,15 +98,13 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors  = true
   config.action_mailer.delivery_method        = :smtp
   config.action_mailer.smtp_settings          = {
-    address:              'smtp.sendgrid.net',
-    # port:                 25, # default
-    port:                 587,
-    authentication:       :plain,
-    user_name:            ENV['SENDGRID_USERNAME'],
-    password:             ENV['SENDGRID_PASSWORD'],
-    domain:               ENV['SENDGRID_DOMAIN'],
-    # added...
-    enable_starttls_auto: true
+    address: 'smtp.sendgrid.net',
+    port: 587, # default: 25
+    authentication: :plain,
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD'],
+    domain: ENV['SENDGRID_DOMAIN'], # TODO: may be causing probs for some sites
+    enable_starttls_auto: true # added...
   }
 
   # See: http://doc.locomotivecms.com/get-started/heroku
