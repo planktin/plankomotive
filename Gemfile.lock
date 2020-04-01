@@ -323,7 +323,7 @@ GEM
     pony (1.13)
       mail (>= 2.0)
     public_suffix (3.0.3)
-    puma (3.12.0)
+    puma (3.12.4)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
     rack (2.0.6)
